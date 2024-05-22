@@ -42,7 +42,7 @@ print("tagset information:")
 ysize = tagger.ysize()
 
 for i in range(0, ysize - 1):
-  print("tag {i} {tagger.yname(i)}")
+  print(f"tag {i} {tagger.yname(i)}")
 
 tagger.parse()
 
