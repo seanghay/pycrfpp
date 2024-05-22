@@ -21,3 +21,7 @@ classifiers = [
 
 [project.urls]
 repository = "https://github.com/seanghay/pycrfpp"
+
+[tool.cibuildwheel]
+# Setuptools bug causes collision between pypy and cpython artifacts
+before-build = "rm -rf {project}/build"
